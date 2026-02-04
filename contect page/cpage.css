@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== NAVBAR ===== */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95) !important;
+  transition: all 0.3s ease;
+}
+
+.brand-text {
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #334155 !important;
+  margin-left: 25px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.active-link::after {
+  width: 80%;
+}
+
+.active-link {
+  color: #14b8a6 !important;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #f8fafb 0%, #ffffff 100%);
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(20, 184, 166, 0.15);
+}
+
+.contact-info h4 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 28px;
+}
+
+.contact-info p {
+  color: #475569;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.pink {
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* ===== FORM ===== */
+.contact-form .form-control {
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  border-radius: 0;
+  padding: 12px 0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: #14b8a6;
+  background: transparent;
+}
+
+.subject {
+  border-bottom: 2px solid #14b8a6 !important;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(20, 184, 166, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.send-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0891b2, #0e7490);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.send-btn:hover::before {
+  left: 0;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(20, 184, 166, 0.4);
+  color: #fff;
+}
+
+.button {
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  color: #fff;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+.custom-footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 70px 0 40px;
+  color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #14b8a6, #0891b2, #14b8a6);
+}
+
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  color: #14b8a6;
+  padding-left: 5px;
+}
+
+.footer-contact span {
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+.footer-contact i {
+  color: #14b8a6;
+}
+
+.footer-logo {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.social-icon:hover {
+  background: linear-gradient(135deg, #14b8a6, #0891b2);
+  color: #fff;
+  transform: translateY(-5px);
+  border-color: #14b8a6;
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin: 0;
+  color: #94a3b8;
+}
+
+.copyright-text i {
+  color: #14b8a6;
+}
